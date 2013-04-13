@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ChartJS with AngularJS</title>
+    </head>
+
+    <body ng-app="chartjsApp">
+
+        <div class="container" ng-controller="DataCtrl1">
+            <button ng-click="randomizeChartData()">Randomize data</button><br/>
+            <chart data="chartData" type="pIE"       height="200" width="300" options="{ animation: true }"></chart>
+            <chart data="chartData" type="doughnut"  height="200" width="300" options="{ animation: true }"></chart>
+            <chart data="chartData" type="polararea" height="200" width="300" options="{ animation: true }"></chart>
+        </div>
+
+        <div class="container" ng-controller="DataCtrl2">
+            <button ng-click="randomizeChartData()">Randomize data</button><br/>
+            <chart data="chartData" type="line"       height="200" width="300" options="{ animation: true }"></chart>
+            <chart data="chartData" type="bar"  height="200" width="300" options="{ animation: true }"></chart>
+            <chart data="chartData" type="radar"  height="300" width="400" options="{ animation: true }"></chart>
+        </div>
+
+
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/chartjs/Chart.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/filters.js"></script>
+        <script src="js/directives.js"></script>
+
+    </body>
+
+</html>
