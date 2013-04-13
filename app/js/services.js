@@ -2,9 +2,8 @@
 
 /* Services */
 
-
 // Demonstrate how to register services
-// In this case it is a simple value service.
+// In this case it is a simple randomize service.
 angular.module('chartjsApp.services', []).
     factory('Data', function () {
         return {
